@@ -1,0 +1,7 @@
+l=[int(x) for x in input().split()]
+l.sort
+lsum=sum(l)
+minel=min(l)
+maxel=max(l)
+print(lsum-maxel,end=" ")
+print(lsum-minel)
