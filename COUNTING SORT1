@@ -1,0 +1,6 @@
+n=int(input())
+arr=[int(x) for x in input().split()]
+freq=[0]*100
+for i in arr:
+    freq[i]=freq[i]+1
+print(' '.join(map(str,freq)))
