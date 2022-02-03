@@ -1,0 +1,3 @@
+import re
+for _ in range(int(input().strip())):
+    print('YES' if re.search(r'.*?'.join("hackerrank"),input().strip()) else 'NO')
