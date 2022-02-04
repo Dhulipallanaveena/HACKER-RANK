@@ -1,0 +1,23 @@
+n=int(input())
+p=[]
+d=[]
+for i in range(n):
+    j=input().split(" ")
+    p.append(int(j[0]))
+    d.append(int(j[1]))
+bal=[]
+for i in range(n):
+    bal.append(p[i]-d[i])
+small=0
+for i in range(n):
+    s=bal[i]
+    j=(i+1)%n
+    while s>=0 and j!=i:
+        s+=bal[j]
+        j=(j+1)%n
+    if j==i:
+        small=i
+        break
+print(small)
+        
+        
