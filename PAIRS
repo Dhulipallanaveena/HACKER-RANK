@@ -1,0 +1,5 @@
+n, value = map(int, input().split())
+arr= list(map(int, input().split()))
+distances = [x + value for x in arr]
+ans = len(set(arr) & set(distances))
+print(ans)
