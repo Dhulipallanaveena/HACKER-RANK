@@ -1,0 +1,5 @@
+def funnyString(s):
+    r=list(reversed(s))
+    s1=[abs(ord(s[c+1])-ord(s[c])) for c in range(len(s)-1)]
+    r1=[abs(ord(r[c+1])-ord(r[c])) for c in range(len(r)-1)]
+    return "Funny" if s1==r1 else "Not Funny"
