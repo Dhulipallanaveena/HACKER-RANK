@@ -1,0 +1,3 @@
+rocks=[set(input()) for i in range(int(input()))]
+gem=set.intersection(*rocks)
+print(len(gem))
