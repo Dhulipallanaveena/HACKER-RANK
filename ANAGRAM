@@ -1,0 +1,11 @@
+from collections import Counter
+for i in range(int(input())):
+    s=input()
+    l=len(s)
+    if l%2==1:
+        print(-1)
+    else:
+        s1=Counter(s[:l//2])
+        s2=Counter(s[l//2:])
+        dif=s1-s2
+        print(sum(dif.values()))
