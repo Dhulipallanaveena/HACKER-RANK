@@ -1,0 +1,4 @@
+from collections import Counter
+count=Counter(input())
+count.subtract(input())
+print(sum(abs(x) for x in count.values()))
