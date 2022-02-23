@@ -1,0 +1,8 @@
+def gameOfThrones(s):
+    c=0
+    for i in "abcdefghijklmnopqrstuvwxyz":
+        if s.count(i)%2!=0:
+            c+=1
+        if c>1:
+            return "NO"
+    return "YES"
